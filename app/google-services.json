@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "501324367638",
+    "firebase_url": "https://scouting-rob-mk1.firebaseio.com",
+    "project_id": "scouting-rob-mk1",
+    "storage_bucket": "scouting-rob-mk1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501324367638:android:b92c49a03f52e4ec75b237",
+        "android_client_info": {
+          "package_name": "com.example.scouting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501324367638-ao4km8etvddb65q5va60kfrd6950jihj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFQIPQs6l1qb94G6TH7hTE90fP6I1_8jU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501324367638-ao4km8etvddb65q5va60kfrd6950jihj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
