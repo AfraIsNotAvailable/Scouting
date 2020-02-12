@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private EditText editText1, editText2;
-    private Button buttonSum;
+    private Button buttonSum, buttonSubs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
         addListenerOnButton();
     }
 
-    private void addListenerOnButton() {
+    public void addListenerOnButton() {
         editText1 = (EditText) findViewById(R.id.editText1);
         editText2 = (EditText) findViewById(R.id.editText2);
-        buttonSum = (Button) findViewById(R.id.button);
+        buttonSum = (Button) findViewById(R.id.add_btn);
+        buttonSubs = (Button) findViewById(R.id.substract_btn);
 
         buttonSum.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +42,21 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), String.valueOf(sum), Toast.LENGTH_LONG).show();
             }
         });
+
+        buttonSubs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String value1 = editText1.getText().toString();
+                String value2 = editText2.getText().toString();
+
+                int a = Integer.parseInt(value1);
+                int b = Integer.parseInt(value2);
+
+                int subs = a - b;
+
+                Toast.makeText(getApplicationContext(), String.valueOf(subs), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        }
     }
-
-
-}
